@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8f3bbdf5-5a00-416a-acd3-f7e0607e78b4</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.py</StartupFile>
+    <StartupFile>iris_experiment.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="iris_experiment.py" />
     <Compile Include="main.py" />
+    <Compile Include="training\khach_hang.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dataset\" />
+    <Folder Include="training\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dataset\iris_dataset.xlsx" />
+    <Content Include="dataset\iris_features_only.xlsx" />
+    <Content Include="dataset\khach_hang_dataset.xlsx" />
+    <Content Include="Iris.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
